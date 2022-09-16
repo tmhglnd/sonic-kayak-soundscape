@@ -8,6 +8,7 @@ Follow all steps for building the Sonic Kayak here https://github.com/fo-am/soni
 
 1. Clone/download this repo and add the folder `/soundscape` to the `stick/sonickayak/pd` folder (on the usb-stick connected to the rPi)
 2. Replace the `sonickayak.pd` and `zone-hydrophone.pd` patchers in the `stick/sonickayak/pd` with the patchers from this repo.
+	- Or if you want to use your own `sonickayak.pd` patcher, add the following object `[soundscape/_main-soundscape]` and initialize with a `1` on the left inlet.
 
 # Overview of the sounddesign
 
@@ -29,3 +30,5 @@ There are 4 different instruments in the patch that interact differently with th
 	- Reacts to the Water Temperature (but local differences/range)
 	- Temperature rising results in more percussive sounds and vice versa
 	- Autonormalizing initialized at `0 - 0`
+
+The `zone-hydrophone.pd` patcher has 4x onepole lowpass filter steps (`lop~`) after the `adc~` to reduce high frequency noise with a steeper slope from the high gain needed to hear the hydrophone sounds. It also has a softclipping (`tanh~`) in the chain to clip loud sounds softly. The cutoff is set at `3500 Hz` (based on experiment).
