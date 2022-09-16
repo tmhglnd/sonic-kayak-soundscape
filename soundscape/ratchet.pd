@@ -1,0 +1,13 @@
+#N canvas 754 128 287 318 12;
+#X obj 78 134 delay;
+#X obj 143 75 r tempo;
+#X obj 143 103 / 8;
+#X obj 48 40 inlet;
+#X obj 48 171 outlet;
+#X obj 78 74 prob \$1;
+#X connect 0 0 4 0;
+#X connect 1 0 2 0;
+#X connect 2 0 0 1;
+#X connect 3 0 5 0;
+#X connect 3 0 4 0;
+#X connect 5 0 0 0;

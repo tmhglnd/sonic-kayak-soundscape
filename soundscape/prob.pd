@@ -1,0 +1,18 @@
+#N canvas 111 249 450 300 12;
+#X obj 58 103 random 100;
+#X obj 58 148 < 70;
+#X obj 57 179 sel 1;
+#X obj 59 44 inlet;
+#X obj 57 225 outlet;
+#X obj 155 46 inlet;
+#X obj 155 104 f \$1;
+#X obj 208 46 loadbang;
+#X text 206 142 use a probability to pass an incoming bang to the outlet
+, f 13;
+#X connect 0 0 1 0;
+#X connect 1 0 2 0;
+#X connect 2 0 4 0;
+#X connect 3 0 0 0;
+#X connect 5 0 6 0;
+#X connect 6 0 1 1;
+#X connect 7 0 6 0;
