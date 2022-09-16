@@ -1,6 +1,6 @@
 # Sonic Kayak Soundscape
 
-Custom soundscape/sonification for the Sonic Kayak project. The development of this sounddesign was commissioned by [Creative Coding Utrecht](www.creativecodingutrecht.nl).
+Custom soundscape/sonification for the Sonic Kayak project. The development of this sounddesign was commissioned by [Creative Coding Utrecht](https://www.creativecodingutrecht.nl).
 
 # Usage
 
