@@ -10,6 +10,8 @@ Follow all steps for building the Sonic Kayak here https://github.com/fo-am/soni
 2. Replace the `sonickayak.pd` and `zone-hydrophone.pd` patchers in the `stick/sonickayak/pd` with the patchers from this repo.
 	- Or if you want to use your own `sonickayak.pd` patcher, add the following object `[soundscape/_main-soundscape]` and initialize with a `1` on the left inlet.
 
+![Sonic Kayak](./images/kayak.jpg)
+
 # Overview of the sounddesign
 
 There are 4 different instruments in the patch that interact differently with the incoming data from the sensors (water temperature, turbidity, air quality) on the Sonic Kayak.
